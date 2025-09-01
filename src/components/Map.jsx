@@ -2,7 +2,7 @@ import { useGLTF } from "@react-three/drei";
 import { RigidBody } from "@react-three/rapier";
 import { useEffect } from "react";
 
-export const MapModel = () => {
+export default function MapModel() {
   const map = useGLTF("/models/Map.glb");
 
   useEffect(() => {
@@ -19,7 +19,7 @@ export const MapModel = () => {
       <primitive object={map.scene} />
     </RigidBody>
   );
-};
+}
 
 // Preload the GLTF
 useGLTF.preload("/models/map.glb");

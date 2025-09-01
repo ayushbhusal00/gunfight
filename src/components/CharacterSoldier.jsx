@@ -133,4 +133,4 @@ export function CharacterSoldier({
   );
 }
 
-useGLTF.preload("/Character_Soldier.gltf");
+useGLTF.preload("/Character_Hazmat.gltf");
